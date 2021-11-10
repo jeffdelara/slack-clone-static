@@ -167,12 +167,29 @@ main {
     color: var(--text-color);
 }
 
-#channel-chat-input {
+.muted {
+    color: var(--muted);
+}
 
+#channel-chat-input {
+    display: flex;
+}
+
+#channel-chat-input .container {
+    width: 100%;
+}
+
+#channel-chat-input textarea {
+    width: 100%;
+    height: 100%;
+    font-family: var(--text-font);
+    padding: .5rem;
+    outline: none;
+    border-radius: 5px;
 }
 
 #thread {
-    width: 500px;
+    width: 580px;
     background-color: white;
     overflow-y: auto;
 }
