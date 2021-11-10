@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans:wght@400;700&display=swap');
 
 :root {
     /* Sidebar */
@@ -21,7 +21,7 @@
     --heading-font: 'Lato', sans-serif;
     --text-font: 'Noto Sans', sans-serif;
 
-    font-size: 14px;
+    font-size: 16px;
 }
 
 * {
@@ -49,29 +49,80 @@ main {
     width: 450px;
     background-color: var(--main-color);
     color: var(--side-text);
+    font-size: 1.1rem;
+    font-family: var(--heading-font);
+    font-weight: 300;
+}
+
+#sidebar a {
+    background-color: var(--main-color);
+    color: var(--side-text);
+    border: none;
+    cursor: pointer;
+    font-family: var(--heading-font);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.bx {
+
+}
+
+#sidebar ul {
+    list-style-type: none;
+    margin: 1rem;
+}
+
+#sidebar ul li {
+    margin: .9rem 0;
 }
 
 #sidebar h1 {
     color: white;
 }
 
+#sidebar .dm-item {
+    display: flex;
+}
+
+#sidebar .dm-item img {
+    width: 20px;
+    border-radius: 3px;
+    margin-right: .5rem;
+}
+
 #sidebar #side-header {
     border-bottom: 1px solid var(--main-color-light);
-    background-color: var(--main-color-hover);
+    /* background-color: var(--main-color-hover); */
+}
+
+#sidebar #side-create-message {
+    float: right;
+    font-size: 2rem;
+    color: white;
 }
 
 #channel-chat {
     width: 100%;
-    background-color: #EEE;
+    background-color: white;
     overflow-y: auto;
+    border-right: 1px solid var(--border-color);
 }
 
 #thread {
     width: 500px;
-    background-color: #AAA;
+    background-color: white;
     overflow-y: auto;
 }
 
 .container {
     padding: 1rem;
+}
+
+.mt {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
 }

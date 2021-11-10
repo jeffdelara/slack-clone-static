@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slack App</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,12 +13,29 @@
         <section id="sidebar">
             <div id="side-header">
                 <div class="container">
+                    <a href="#"><i class='bx bx-message-square-edit' id="side-create-message"></i></a>
                     <h1>Avion School</h1>
                 </div>
             </div>
-            
+
             <div class="container">
-                Sidebar
+                <div id="side-channel-list">
+                    <a href="#">Channels</a>
+                    <ul>
+                        <li><i class='bx bx-hash'></i> announcement</li>
+                        <li><i class='bx bx-hash'></i> coding</li>
+                        <li><a href="#"><i class='bx bxs-plus-square' ></i> Add channels</a></li>
+                    </ul>
+                </div>
+
+                <div id="side-direct-messages" class="mt-2">
+                    <a href="#">Direct messages</a>
+                    <ul>
+                        <li class="dm-item"><img src="https://a.slack-edge.com/d4111/img/apps/workflows_192.png" alt=""> Slackbot</li>
+                        <li class="dm-item"><img src="https://ca.slack-edge.com/T010DU0GZE0-U02C42FABUK-8daed97695af-512" alt=""> Jeffrey de Lara</li>
+                        <li class="dm-item"><img src="https://ca.slack-edge.com/T010DU0GZE0-U01CNLJ3J0P-46af7649e68b-512" alt=""> Maurus Vitor</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
