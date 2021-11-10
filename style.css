@@ -79,6 +79,8 @@ main {
 
 #sidebar h1 {
     color: white;
+    font-size: 1.3rem;
+    display: inline;
 }
 
 #sidebar .dm-item {
@@ -91,22 +93,82 @@ main {
     margin-right: .5rem;
 }
 
-#sidebar #side-header {
+#sidebar #side-header, #channel-header {
     border-bottom: 1px solid var(--main-color-light);
     /* background-color: var(--main-color-hover); */
 }
 
+
+
 #sidebar #side-create-message {
-    float: right;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 #channel-chat {
+    display: grid;
+    grid-template-rows: 63px auto 100px;
     width: 100%;
     background-color: white;
-    overflow-y: auto;
     border-right: 1px solid var(--border-color);
+}
+
+#channel-chat-content {
+    overflow-y: auto;
+}
+
+#channel-header {
+    border-color: var(--border-color);
+
+}
+
+#channel-header img {
+    width: 20px;
+    border-radius: 5px;
+    margin: 0 .2rem;
+}
+
+#channel-members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-right: .4rem;
+    padding-left: .2rem;
+    border-radius: 5px;
+}
+
+.channel-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.channel-btn {
+    text-decoration: none;
+    margin: 0 .5rem;
+    border: 1px solid var(--border-color);
+    padding: .3rem .5rem;
+    border-radius: 5px;
+    color: var(--muted);
+    transition: .3s;
+}
+
+.channel-btn:hover {
+    background-color: var(--hover-bg);
+    color: var(--text-color);
+}
+
+#channel-chat-input {
+
 }
 
 #thread {
