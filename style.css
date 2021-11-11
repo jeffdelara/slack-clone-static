@@ -146,6 +146,103 @@ main {
     border-radius: 5px;
 }
 
+.channel-message .sender-name {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.channel-message .created {
+    color: var(--muted);
+    font-family: var(--heading-font);
+    font-weight: 300;
+    font-size: .8rem;
+    margin: 0 1rem;
+}
+
+.channel-message {
+    padding: .8rem 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40px auto;
+    grid-gap: 1rem;
+}
+
+.channel-message:hover  {
+    background-color: var(--hover-bg);
+}
+
+.message-replies {
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.message-replies:hover {
+    cursor: pointer;
+    background-color: white;
+    padding: .3rem;
+    border: 1px solid #DDD;
+}
+
+.message-replies span {
+    margin-left: .5rem;
+}
+
+.message-replies a {
+    color: var(--links);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.message-replies a:hover {
+    color: var(--links-hover);
+    text-decoration: underline;
+}
+
+.message-replies .date {
+    font-size: .8rem;
+    color: var(--muted);
+}
+
+.message-replies img {
+    margin-right: .2rem;
+}
+
+.message-replies img {
+    width: 25px;
+    border-radius: 3px;
+}
+
+.date-divider {
+    position: relative;
+    border-bottom:1px solid #EEE;
+    margin: 2rem 0;
+    background-color: rebeccapurpled;
+}
+
+.divider-content {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #EEE;
+    border-radius: 2rem;
+    padding: .4rem 1rem;
+    top: -16px;
+    left: calc(50% - 100px);
+    width: 200px;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.sender-pic img {
+    width: 40px;
+    border-radius: 5px;
+}
+
 .channel-options {
     display: flex;
     justify-content: center;
