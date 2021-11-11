@@ -375,6 +375,8 @@ main {
 .second {
     color: var(--muted);
     margin: .5rem 0;
+    font-size: .9rem;
+    line-height: 1.5rem;
 }
 
 a {
