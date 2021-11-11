@@ -93,7 +93,7 @@ main {
     margin-right: .5rem;
 }
 
-#sidebar #side-header, #channel-header {
+#sidebar #side-header, #channel-header, #thread-header {
     border-bottom: 1px solid var(--main-color-light);
     /* background-color: var(--main-color-hover); */
 }
@@ -104,10 +104,12 @@ main {
     font-size: 1.8rem;
     color: white;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 62px;
 }
 
 
@@ -123,9 +125,8 @@ main {
     overflow-y: auto;
 }
 
-#channel-header {
+#channel-header, #thread-header {
     border-color: var(--border-color);
-
 }
 
 #channel-header img {
@@ -217,11 +218,21 @@ main {
     border-radius: 3px;
 }
 
-.date-divider {
+.date-divider, .thread-divider {
     position: relative;
     border-bottom:1px solid #EEE;
     margin: 2rem 0;
     background-color: rebeccapurpled;
+}
+
+.thread-content {
+    font-size: .8rem;
+    color: var(--muted);
+    position: absolute;
+    top: -10px;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    background-color: white;
 }
 
 .divider-content {
@@ -268,25 +279,27 @@ main {
     color: var(--muted);
 }
 
-#channel-chat-input {
+#channel-chat-input, #thread-chat-input {
     display: flex;
 }
 
-#channel-chat-input .container {
+#channel-chat-input .container, #thread-chat-input .container {
     width: 100%;
 }
 
-#channel-chat-input textarea {
+#channel-chat-input textarea, #thread-chat-input textarea {
     width: 100%;
     height: 100%;
     font-family: var(--text-font);
     padding: .5rem;
     outline: none;
     border-radius: 5px;
+    border: 1px solid #AAA;
+    font-size: 1rem;
 }
 
 #thread {
-    width: 580px;
+    width: 800px;
     background-color: white;
     overflow-y: auto;
 }
